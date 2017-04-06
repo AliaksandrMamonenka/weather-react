@@ -1,2 +1,6 @@
 # weather-react
-React App
+Weather checker:
+- HTML5;
+- CSS3;
+- React;
+- Webpack 2;

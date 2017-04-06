@@ -1,0 +1,76 @@
+@import "~normalize.css/normalize.css";
+@import "./../common";
+
+* {
+  box-sizing: border-box;
+}
+
+// Base styles
+html,
+body,
+#root,
+.weather-app {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: @light url("./../images/bg-app.jpg");
+  margin: 0;
+}
+
+.weather-app_bg-image {
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  border-bottom: 8px solid @green;
+  background: @blue url("./../images/sky-bg.png") no-repeat;
+  background-size: cover;
+}
+
+.weather-app_main-content-wrapper {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media @mobile {
+    padding: 0 10px;
+    width: 100%;
+  }
+  @media @tablet {
+    padding: 0 30px;
+    width: 100%;
+  }
+  @media @desktop {
+    width: 950px;
+  }
+
+  @media @desktop-xl {
+    width: 1029px;
+  }
+
+}
+
+.weather-app_main-content {
+  width: 100%;
+  min-height: 50%;
+  border: 2px solid @green;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+  background: @light url("./../images/bg-app.jpg");
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}

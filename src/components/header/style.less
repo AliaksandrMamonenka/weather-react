@@ -1,0 +1,30 @@
+@import "./../../common";
+
+.header_title {
+  font-family: Georgia, Helvetica, Arial, sans-serif;;
+  color: @light;
+  display: inline-block;
+  margin: 0;
+  font-weight: bold;
+  @media @mobile {
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0;
+  }
+  @media @tablet {
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 0;
+  }
+  @media @desktop {
+    font-size: 36px;
+    padding: 15px;
+    padding-left: 0;
+  }
+
+  @media @desktop-xl {
+    padding: 25px;
+    font-size: 40px;
+    padding-left: 0;
+  }
+}

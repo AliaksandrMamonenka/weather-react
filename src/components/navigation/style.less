@@ -1,0 +1,35 @@
+@import "./../../common";
+
+// Navigation
+.navigation-items {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  .navigation-items_item {
+    position: relative;
+    margin-bottom: 5px;
+
+    @media @tabletPlus {
+      display: table-cell;
+      width: 1%;
+      margin-bottom: 0;
+    }
+
+    .navigation-items_link {
+      text-align: center;
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      color: @blue;
+      text-decoration: none;
+      border: 2px solid @gray;
+    }
+  }
+}

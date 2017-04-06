@@ -1,0 +1,60 @@
+@import "./../../common";
+
+.single-city_wrapper {
+  position: absolute;
+  top: 175px;
+  left: 6px;
+  right: 6px;
+  bottom: 0;
+
+  @media @tabletPlus {
+    top: 80px;
+  }
+
+  .single-city_content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media @desktopPlus {
+      flex-direction: row;
+      align-items: stretch;
+      height: 100%;
+    }
+  }
+
+  .single-city_content {
+    flex: 1 1 auto;
+    margin: 5px;
+    border: 2px solid @gray;
+
+    @media @desktopPlus {
+      width: 50%;
+    }
+
+    .single-city_content-main {
+      height: 100%;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @desktopPlus {
+        width: 80%;
+        display: inline-block;
+      }
+    }
+
+    .single-city_content-additional {
+      height: 100%;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @desktopPlus {
+        width: 20%;
+        display: inline-block;
+      }
+    }
+  }
+}
